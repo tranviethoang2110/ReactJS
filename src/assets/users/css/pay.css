@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    box-sizing: border-box;
+    list-style: none;
+    font-weight: 400;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+  .container-build{
+      width: 100%;
+  }
+  .header-top{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+  .header-main-left{
+      width: 40.333%;
+  }
+  .header-main-mid{
+      width: 16.667%;
+  }
+  .header-main-right{
+      width: 43%;
+  }
+  .header-main-right ul{
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+  }
+  .cacmuc>li>a{
+      border-bottom: 3px solid transparent;
+  }
+  .cacmuc>li:hover>a{
+      border-bottom: 3px solid black;
+  }
+  .timkiem{
+      position: relative;
+  }
+  .search-box{
+      position: absolute;
+      display: none;
+  }
+  .inputSearch{
+      width: 330px;
+      height: 30px;
+      padding-top: 0;
+      padding-bottom: 0;
+      color: #000;
+      font-weight: bold;
+      font-size: 18px;
+      font-weight: 300px;
+      border-bottom: 2px solid #000;
+      display: block;
+  }
+  .timkiem:hover .search-box{
+      display: block;
+      bottom: -30px;
+      right: -100px;
+      z-index: 3;
+  } 
+  /* ---------------------- */
+  .header-index{
+      width: 100%;
+      position: sticky;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      background-color: #ffffff;
+  }
+  .header-index{
+      font-size: 18px;
+      
+  }
+  .header-list-lv1{
+      width: 89%;
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      padding: 30px 0px;
+  }
+  
+  a{
+      text-decoration: none;
+  }
+  
+  .header-list-lv1 a {
+      color: black;
+      text-decoration: none;
+      font-weight: 700;
+  }
+  
+  .header-list-lv1 .header-list-lv2{
+      position: absolute;
+      display: none;  
+      padding-top: 10px;
+      padding-left: 50px;
+      line-height: 2;
+  }
+  
+  .header-list-lv1 .header-list-lv2>li{
+      width: 200px;
+      font-size: 14px;
+      background-color: #ffffff;
+  }
+  .header-list-lv1 li:hover .header-list-lv2 {
+      display: block;
+  }
+  .header-list-lv1 ul.header-list-lv2 li:hover>a{
+      padding: 10px;
+      color: white;
+  }
+  .header-list-lv2 li:hover{
+      background-color: #000;
+      border-radius: 3px solid black;
+  }
+  .header-list-lv1 ul.header-list-lv2 li{
+      padding: 5px;
+      border: 3px solid black;
+      border-radius: 6px;
+  }
+  
+  @keyframes chayTuPhaiQuaTrai {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    
+    .chay-chu {
+      white-space: nowrap;
+      overflow: hidden;
+      width: 100%; /* Đảm bảo chiều rộng của phần tử cha để chữ có thể chạy qua toàn bộ màn hình */
+      color: #ffffff  ;
+      background-color: black;
+    }
+    marquee{
+      padding: 5px 0px;
+    }
+    .chay-chu marquee>span{
+      padding-left: 25px;
+    }
+
+
+
+
+/* --------------delivery----------------- */
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+.delivery{
+    padding: 100px 0px;
+}
+.delivery-content-left{
+    width: 60%;
+    padding-right: 12px;
+}
+.delivery-content-left p{
+    font-size: 17px;
+}
+.delivery-content-left >p:first-child{
+    font-weight: bold;
+}
+.delivery-content-left label{
+    font-size: 17px;
+    margin-bottom: 6px;
+    display: block;
+}
+
+
+.delivery-content-left-input-top{
+    justify-content: space-between;
+}
+.delivery-content-left-input-top-items{
+    width: calc(50% - 12px); /* Adjust the width and margin as needed */
+}
+.delivery-content-left-input-top-items select,
+
+.delivery-content-left-input-top-items input{
+    width: 100%;
+    height: 35px;
+    border: 1px solid #dddddd;
+    padding-left: 6px;
+}
+.delivery-content-left-input-bottom input{
+    width: 100%;
+    height: 35px;
+    border: 1px solid #dddddd;
+}
+.delivery-content-left-input-bottom p{
+    display: inline-block;
+    font-size: 17px;
+}
+.delivery-content-left-input-bottom span{
+    margin-right: 12px;
+}
+.delivery-content-left-bottom {
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.delivery-content-left-bottom  button{
+    width: 50%;
+    border-radius: 4px;
+    font-weight: 500;
+    padding: 1.4em 1.7em;
+    text-align: center;
+    cursor: pointer;
+    background: #338dbc;
+    color: white;
+    transition: all 0,3 ease;
+}
+.delivery-content-left-bottom  button:hover{
+        /* background: #286f94; */
+        color: white;
+        filter: brightness(1.2);
+}
+.delivery-content-right{
+    width: 40%;
+    padding-left: 12px;
+    border-left: 2px solid #dddddd;
+    height: auto;
+}
+.delivery-content-right table{
+    width: 100%;
+    font-size: 17px;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+}
+.delivery-content-right table tr th:first-child{
+    text-align: left;
+}
+.delivery-content-right table tr th{
+    padding-bottom: 12px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.delivery-content-right table tr td{
+    padding: 6px 0;
+}
+
+
+
+.product-thumbnail{
+    width: 4.6em;
+    height: 4.6em;
+    border-radius: 8px;
+    background: #fff;
+    position: relative;
+}
+.product-thumbnail img{
+    width: 64px;
+    height: 64px;
+}
+.product-thumbnail span{
+    font-weight: 500;
+    padding: 0.15em 0.65em;
+    border-radius: 2em;
+    background-color: rgba(153,153,153,0.9);
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+}
+.giamgia{
+    margin-top: 20px;
+}
+.giamgia input{
+    width: 75%;
+    height: 35px;
+    border: 1px solid #dddddd;
+    font-size: 17px;
+    padding-left: 6px;
+}
+.giamgia button{
+    width: 24%;
+    height: 35px;
+    border-radius: 4px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    background: #338dbc;
+    color: white;
+    transition: all 0,3 ease;
+}
+.giamgia button:hover{
+    color: white;
+    filter: brightness(1.2);
+}
+      /* ----footer--- */
+      .bad{
+        width: 100%;
+    }
+    .footer-top{
+        padding: 20px 0px;
+    }
+    
+    hr{
+        width: 100%;
+        border: 1px solid black;
+    }
+    
+    .row1{
+        display: flex;
+       justify-content: center ;
+       margin-top: 100px;
+      }
+      .footer-block{
+        font-size: 16px;
+        font-weight: bold;
+      }
+      h4{
+        display: flex;
+        font-size: 16px;
+        align-items: center;
+      }
+      .social-list{
+        display: flex;
+      }
+      .item-fade-box{
+        width: 40px;
+        height: 40px;
+      }
+      li{
+        list-style-type: none;
+      }
+      .footer-content{
+        margin-bottom: 30px;
+      }
+      .footer-title{
+        display: block;
+        margin-bottom: 30px;
+      }
+      .footer-title2{
+        margin-bottom: 30px;
+      }
+      .contentdk{
+        position: relative;
+        margin-bottom: 30px;
+        width: 100%;
+      }
+      
+      .input-group{
+        height: 30px;
+        border: 1px solid black;
+        width: 350px;
+      }
+      .button-dark{
+        height: 30px;
+        position: absolute;
+        right: 0;
+        background-color: black;
+        color: white;
+      }
+      .email{
+        height: 30px;
+        border: 2px solid black;
+      }
+      .hotline b a{
+        text-decoration: none;
+        color: black;
+      }
+      .chinhanh{
+        margin-left: 100px;
+      }
+      .footer-titile3{
+        margin-bottom: 30px;
+      }
+      .dschinhanh{
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .dschinhanh ul li{
+        padding: 10px;
+      }
+      .coppyright {
+        padding: 15px;
+      }
+      .coppyright a{
+        text-decoration: none;
+        color: black;
+      }
+      .hotro{
+        margin-left: 100px;
+      }
+      .dshotro ul li{
+        padding: 15px;
+      }
+      .ht{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+    
+      .cart-row{
+        margin: 12px 0px 0px;
+      }
